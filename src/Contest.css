@@ -1,0 +1,79 @@
+.container-big {
+    display: grid;
+    grid-column: span 3;    
+    max-width: 500px;
+    max-height: 400px;
+    margin: 10px;
+}
+
+.contest-card {
+    position: relative;
+    background-color: white;
+    display: block;
+    /* column-span: 3; */
+    box-shadow: 3px 3px 1px 3px rgb(80, 80, 80);
+    margin: 10px;
+    border-radius: 5px;
+    border: 5px grey;
+    padding: 15px;
+    max-width: 33.33vw;
+    max-height: 33.33vh;
+}
+
+.start {
+    color: rgb(115, 114, 114);
+    font-size: medium;
+}
+
+
+.site-link-name {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: medium;
+    margin-top: 3px;
+    padding: 8px 8px;
+}
+
+.logo {
+    position: absolute;
+    /* max-width: fit-content; */
+    top: 10px;
+    left: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+
+.timings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    font-weight: bold;
+    background-color: rgb(206, 206, 244, 0.8);
+    margin: 12px;
+    /* color: rgb(206, 206, 244); */
+}
+
+.time-container {
+    margin: auto 15px;
+}

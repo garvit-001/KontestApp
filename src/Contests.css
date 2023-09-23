@@ -1,0 +1,63 @@
+/* .body{
+    color: black;
+}
+.contest-card{
+    background-color: rgb(108, 108, 108);
+    color: black;
+} */
+.main {
+    display: grid;
+    column-span: 3;
+    margin-top: 15px;
+    padding: 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding-top: 10px;
+    justify-content: center;
+
+}
+
+
+.container-small {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    /* width: 15%; */
+    padding-top: 16px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    /* max-width: 22%; */
+    /* background-color: white; */
+
+}
+
+.container-big{
+    width: 31%;
+}
+/* 
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+
+/* .pages {
+    background-color: #fff;
+} */
+
+
+.gr{
+    display: flex;
+    flex-direction: row;
+}

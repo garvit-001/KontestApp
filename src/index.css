@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .previousBtn {
+    @apply block w-8 h-8 leading-8 text-center border border-gray-100 rounded;
+  }
+
+  .nextBtn {
+    @apply block w-8 h-8 leading-8 text-center border border-gray-100 rounded;
+  }
+
+  .activeBtn {
+    @apply block w-8 h-8 leading-8 text-center text-white bg-blue-600 border-blue-600 rounded;
+  }
+
+  .paginationContainer {
+    @apply flex justify-center space-x-1 text-xs font-medium;
+  }
+
+  .paginationContainer a {
+    @apply border w-8 h-8 text-center leading-8 border-gray-600 rounded px-3 py-2;
+  }
+}
+
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

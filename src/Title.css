@@ -1,0 +1,17 @@
+.info {
+    margin-top: 2vh;
+}
+
+.heading {
+    margin: 2vh;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(134, 90, 90);
+}
+
+.sub-heading {
+    font-size: large;
+    padding: 8px;
+    background-color: rgb(199, 229, 199);
+    color: rgb(35, 35, 72);
+}
