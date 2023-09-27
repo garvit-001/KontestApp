@@ -26,7 +26,8 @@
 .container-small {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card {
@@ -43,19 +44,32 @@
 .container-big{
     width: 31%;
 }
-/* 
-.next {
+
+/* .next {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-} */
+}  */
 
 
 /* .pages {
     background-color: #fff;
 } */
 
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 5px;
+    cursor: pointer;
+}
+
+a :active{
+    text-decoration: blue;
+}
 
 .gr{
     display: flex;
