@@ -12,13 +12,13 @@ function Nav() {
           </Link>
         </li>
         <li className="list-item">
-          <Link className="link" to="/codeforces">
-            CodeForces
+          <Link className="link" to="/accounts">
+            Accounts
           </Link>
         </li>
         <li className="list-item">
-          <Link className="link" to="/leet_code">
-            Leetcode
+          <Link className="link" to="/coders">
+            coder
           </Link>
         </li>
         <li className="list-item">

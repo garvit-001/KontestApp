@@ -1,0 +1,103 @@
+/* General Layout */
+.main {
+  padding: 2rem 1rem;
+  background-color: #f4f7fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-small {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Style */
+.contest-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contest-card h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.contest-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.25rem 0;
+}
+
+.contest-card a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contest-card a:hover {
+  text-decoration: underline;
+}
+
+/* Pagination */
+.pages {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.paginationContainer {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.paginationContainer li {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.paginationContainer li:hover {
+  background-color: #e0f0ff;
+}
+
+.activeBtn {
+  background-color: #3498db !important;
+  color: white;
+  border: none;
+}
+
+.previousBtn, .nextBtn {
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .contest-card {
+    padding: 1rem;
+  }
+
+  .paginationContainer li {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

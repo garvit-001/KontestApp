@@ -1,19 +1,22 @@
 import { format } from "date-fns";
 import "./Contest.css";
+import { useEffect } from "react";
 
 const Contest = ({ contest }) => {
-  const start_time = format(
-    new Date(contest.start_time),
+  // console.log("list",contest);
+  const start = format(
+    new Date(contest.start),
     "MM-dd-yyyy HH:mm:ss"
   );
 
-  const end_time = format(new Date(contest.end_time), "MM-dd-yyyy HH:mm:ss");
+  const end = format(new Date(contest.end), "MM-dd-yyyy HH:mm:ss");
 
-  const start = contest.start_time.replace(/[^a-zA-Z0-9 ]/g, "");
-  const end = contest.end_time.replace(/[^a-zA-Z0-9 ]/g, "");
-  const text = contest.name.replace(/ /g, "+");
-  const calendar = `https://calendar.google.com/event?action=TEMPLATE&dates=${start}/${end}&text=${text}&location=${contest.url}`;
-  const name = contest.name.slice(0, 80);
+  const start_time = contest.start.replace(/[^a-zA-Z0-9 ]/g, "");
+  const end_time = contest.end.replace(/[^a-zA-Z0-9 ]/g, "");
+  const text = contest.event.replace(/ /g, "+");
+  const calendar = `https://calendar.google.com/event?action=TEMPLATE&dates=${start_time}/${end_time}&text=${text}&location=${contest.href}`;
+ 
+  const name = contest.host.slice(0, 80);
 
   return (
     <div className="container-big">
@@ -27,21 +30,20 @@ const Contest = ({ contest }) => {
             src="https://getwallpapers.com/wallpaper/full/b/3/8/358806.jpg"
             className="logo"
             alt="contest site logo"
-          />
-
-          <h5 className="">{name}</h5>
+          /> 
+          <h5 className="">{contest.event}</h5>
 
           <dl className="timings">
             <div className="time-container">
               <dt className=" start">Start Time</dt>
 
-              <dd className="start">{start_time}</dd>
+              <dd className="start">{start}</dd>
             </div>
 
             <div className="time-container">
               <dt className="start">End Time</dt>
 
-              <dd className="start">{end_time}</dd>
+              <dd className="start">{end}</dd>
             </div>
           </dl>
           <div className="actions">
@@ -54,14 +56,14 @@ const Contest = ({ contest }) => {
             </div>
             <div>
               <p className="text-indigo-600 links">
-                <a href={contest.url} target="_blank" rel="noreferrer">
+                <a href={contest.href} target="_blank" rel="noreferrer">
                   <span>Url</span>
                 </a>
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import "./App.css";
 import Nav from "./Nav";
-import Contests from "./Contests";
+import Contests from "./components/Contests";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import React from "react";
 import "./Nav.css";
-import QrCode from "./QrCode/QrCode";
-import PasswordGenerator from "./PasswordGenerator/PasswordGenerator";
+import AccountList from "./components/AccountList";
+import CoderList from "./components/CoderList";
+import CoderDetails from "./components/Coderetails";
 
 function App() {
   return (
@@ -14,16 +15,9 @@ function App() {
         <Nav />
         <Routes>
           <Route exact path="/" element={<Contests key="all" name={"all"} />} />
-          <Route
-            exact
-            path="/leet_code"
-            element={<Contests key="leet_code" name={"leet_code"} />}
-          />
-          <Route
-            exact
-            path="/codeforces"
-            element={<Contests key="codeforces" name={"codeforces"} />}
-          />
+          <Route path="/accounts" element={<AccountList />} />
+          <Route path="/coders" element={<CoderList />} />
+          <Route path="/coders/:id" element={<CoderDetails />} />
           <Route
             exact
             path="/at_coder"
@@ -44,8 +38,6 @@ function App() {
             path="/kick_start"
             element={<Contests key="kick_start" name={"kick_start"} />}
           />
-          <Route exact path="/QrCode" element={<QrCode />} />
-          <Route exact path="/PassWord" element={<PasswordGenerator />} />
         </Routes>
       </BrowserRouter>
     </div>
