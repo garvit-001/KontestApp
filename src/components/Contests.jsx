@@ -21,7 +21,7 @@ const Contests = () => {
 
   useEffect(() => {
     setSearching(true);
-    fetchFromClist("/contest/")
+    fetchFromClist("/contest/?upcoming=true")
       .then(data => {
         setContests(data.objects || []);
         setSearching(false);
@@ -32,7 +32,7 @@ const Contests = () => {
       });
   }, []);
 
-  if (searching) return <Searching />;
+  if (searching) return <Searching pageName={"contests"}/>;
 
   return (
     <section className="main">

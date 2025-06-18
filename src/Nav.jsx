@@ -18,37 +18,17 @@ function Nav() {
         </li>
         <li className="list-item">
           <Link className="link" to="/coders">
-            coder
+            Coder
           </Link>
         </li>
         <li className="list-item">
-          <Link className="link" to="/at_coder">
-            AtCoder
+          <Link className="link" to="/resources">
+            Resources
           </Link>
         </li>
         <li className="list-item">
-          <Link className="link" to="/code_chef">
-            CodeChef
-          </Link>
-        </li>
-        <li className="list-item">
-          <Link className="link" to="/hacker_rank">
-            HackerRank
-          </Link>
-        </li>
-        <li className="list-item">
-          <Link className="link" to="/kick_start">
-            KickStart
-          </Link>
-        </li>
-        <li className="list-item">
-          <Link className="link" to="/QrCode">
-            QR code
-          </Link>
-        </li>
-        <li className="list-item">
-          <Link className="link" to="/PassWord">
-            Password Generator
+          <Link className="link" to="/Problems">
+            Problems
           </Link>
         </li>
       </ul>

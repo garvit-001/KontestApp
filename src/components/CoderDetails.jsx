@@ -9,6 +9,7 @@ const CoderDetails = () => {
 
   useEffect(() => {
     fetchFromClist(`/coder/${id}/`).then((data) => setCoder(data));
+    console.log("id", id);
   }, [id]);
 
   if (!coder) return <p>Loading coder info...</p>;

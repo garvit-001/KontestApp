@@ -29,7 +29,7 @@ const CoderList = () => {
       });
   }, []);
 
-  if (searching) return <Searching />;
+  if (searching) return <Searching pageName={"coders"}/>;
 
   return (
     <div className="table-wrapper">
